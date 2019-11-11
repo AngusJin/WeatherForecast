@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day0"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week0"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd0"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high0"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low0"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day1"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textColor="@color/colorAccentCos"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day2"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day3"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day4"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day5"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day6"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day7"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week7"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd7"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high7"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low7"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day8"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week8"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd8"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high8"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low8"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day9"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week9"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd9"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high9"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low9"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day10"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week10"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd10"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high10"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low10"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day11"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week11"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd11"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high11"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low11"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day12"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week12"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd12"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high12"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low12"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day13"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week13"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd13"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high13"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low13"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day14"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week14"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd14"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high14"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low14"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day15"
+            android:layout_width="73.5dp"
+            android:layout_height="match_parent"
+            android:hardwareAccelerated="true"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/week15"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ymd15"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="11-1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/sun" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/high15"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="18°"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/low15"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|top"
+                        android:text="5°"
+                        android:textColor="@android:color/holo_blue_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/mainInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="305dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="15dp">
+
+                            <TextView
+                                android:id="@+id/parentCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center|top"
+                                android:text="北京"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/wendu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom|center"
+                                android:text="17°"
+                                android:textSize="50sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/city"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:gravity="top|left"
+                                android:paddingTop="3dp"
+                                android:text="北京市"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/weather_shidu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom"
+                                android:text="阴\n湿度 43%" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp" />
+
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingRight="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="10dp">
+
+                                <ImageView
+                                    android:id="@+id/todayImg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingRight="8dp" />
+
+                                <TextView
+                                    android:id="@+id/quality"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="175dp"
+                                    android:gravity="bottom|right"
+                                    android:text="空气 优" />
+
+                                <TextView
+                                    android:id="@+id/date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="bottom|right"
+                                    android:text="2019-11-1"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:id="@+id/like"
+                                    style="@android:style/Widget.Material.Button.Borderless"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="210dp"
+                                    android:background="@drawable/star_new"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/forecast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hardwareAccelerated="true"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="34dp">
+
+                                <TextView
+                                    android:id="@+id/title1"
+                                    android:layout_width="190dp"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="8dp"
+                                    android:text="每日概览"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lastUpdateTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:paddingTop="8dp"
+                                    android:paddingRight="8dp"
+                                    android:text="上次更新 20:23"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <include layout="@layout/forecast" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/airQuality"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hardwareAccelerated="true"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                android:layout_width="190dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/title2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="8dp"
+                                    android:text="空气质量"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/aqi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="AQI"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:paddingTop="30dp">
+
+                                    <com.sitan.weatherforecast.CircleProgress
+                                        android:id="@+id/progress"
+                                        android:layout_width="190dp"
+                                        android:layout_height="190dp"
+                                        android:layout_centerInParent="true"
+                                        app:circle_angle="240"
+                                        app:circle_finished_color="@color/finished_color"
+                                        app:circle_progress="50"
+                                        app:circle_text_size="12dp"
+                                        app:circle_unfinished_color="@color/unfinished_color" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingRight="25dp">
+
+                                <TextView
+                                    android:id="@+id/pm25"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="PM2.5"
+                                    android:textStyle="bold" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar1"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/pm10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="PM10"
+                                    android:textStyle="bold" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar2"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <include layout="@layout/today_details" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/netTip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无可用网络！"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>
