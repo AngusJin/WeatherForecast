@@ -18,6 +18,8 @@ public class SendRequest implements Runnable {
         this.city_code = city_code;
     }
 
+
+    //获取天气信息，返回Json值
     @Override
     public void run() {
         try {

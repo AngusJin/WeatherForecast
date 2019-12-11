@@ -5,7 +5,6 @@ import java.util.List;
 public class WeatherInfo {
 
     /**
-     * message : success感谢又拍云(upyun.com)提供CDN赞助
      * status : 200
      * date : 20191101
      * time : 2019-11-01 14:16:16
